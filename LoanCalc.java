@@ -10,7 +10,7 @@ public class LoanCalc {
      * Gets the loan data and computes the periodical payment.
      * Expects to get three command-line arguments: sum of the loan (double),
      * interest rate (double, as a percentage), and number of payments (int).  
-     */
+     *//
 	public static void main(String[] args) {		
 		// Gets the loan data
 		double loan = Double.parseDouble(args[0]);
