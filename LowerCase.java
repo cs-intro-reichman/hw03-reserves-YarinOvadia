@@ -1,8 +1,8 @@
 /** String processing exercise 1. */
 public class LowerCase {
     public static void main(String[] args) {  
-        String str = args[0];
-        System.out.println(lowerCase(str));
+        String s = args[0];
+        System.out.println(lowerCase(s));
     }
 
    /**
@@ -11,7 +11,18 @@ public class LowerCase {
     * Non-letter characters are left as is.
     */
     public static String lowerCase(String s) {
-        // Replace the following statement with your code
-        return null;
-    }
-}
+        String strr = "";
+		for (int i=0 ; i < s.length () ; i++) {
+			if ((s.charAt(i) >= 65) && (s.charAt(i) <= 90)) {
+				int n = s.charAt(i) + 32;
+				strr += (char)n;
+			} else strr += s.charAt(i);
+		}
+		         return strr;
+				
+			}
+		}
+		
+		
+		
+		
